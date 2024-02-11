@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
     <style>
         /* Internal CSS styles */
         body {
@@ -56,7 +55,7 @@
             border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
             margin: 10px;
-            font-size: 16px; /* One point bigger font size */
+            font-size: 16px; /* Increase font size */
         }
         .cta-button:hover {
             background-color: #ff9933; /* Lighter orange button on hover */
@@ -68,6 +67,18 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .ping-button {
+            display: block;
+            width: 50px; /* Adjust the width and height as needed */
+            height: 50px;
+            background-image: url('bitcoin-btc-logo.png'); /* Replace 'bitcoin-btc-logo.png' with the actual path to your PNG file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999; /* Ensure the button stays above other content */
         }
     </style>
 </head>
@@ -83,11 +94,12 @@
         <br>
         <a href="https://x.com/d4tis_" class="cta-button">X</a>
         <a href="https://primal.net/p/npub1cx2wtu40pu4xzu0qmcz0mkfup3uk86pztnkyjkq3nfr9ghvxe9xsafsp6k" class="cta-button">nostr</a>
-        <a href="https://www.linkedin.com/in/d4tis" class="cta-button">in</a>
+        <a href="https://www.linkedin.com/in/d4tis" class="cta-button">In</a>
         <a href="lightning:zap@d4tis.me" class="cta-button">⚡</a>
     </div>
     <div class="footer">
         <p>Inflation=Theft</p>
     </div>
+    <a href="https://learnmeabitcoin.com" class="ping-button"></a>
 </body>
 </html>
