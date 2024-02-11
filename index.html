@@ -64,7 +64,7 @@
             background-color: #000; /* Black footer background */
             padding: 10px;
             font-size: 12px; /* Small font size */
-            position: fixed;
+            position: relative; /* Changed from fixed to relative */
             bottom: 0;
             width: 100%;
         }
@@ -75,9 +75,10 @@
             background-image: url('bitcoin-btc-logo.png'); /* Replace 'bitcoin-btc-logo.png' with the actual path to your PNG file */
             background-size: cover;
             background-repeat: no-repeat;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            position: absolute; /* Changed from fixed to absolute */
+            bottom: -30px; /* Adjust the position */
+            left: 50%; /* Center the button horizontally */
+            transform: translateX(-50%); /* Center the button horizontally */
             z-index: 999; /* Ensure the button stays above other content */
         }
     </style>
@@ -99,7 +100,4 @@
     </div>
     <div class="footer">
         <p>Inflation=Theft</p>
-    </div>
-    <a href="https://learnmeabitcoin.com" class="ping-button"></a>
-</body>
-</html>
+       
