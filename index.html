@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
     <style>
         /* Internal CSS styles */
         body {
@@ -18,7 +17,6 @@
             background-color: #000; /* Black background */
             text-align: center;
             color: #fff; /* White text */
-            position: relative; /* Ensure positioning relative for absolute positioning of ping button */
         }
         .header {
             background-color: #cc5500; /* Darker orange header */
@@ -71,14 +69,16 @@
             width: 100%;
         }
         .ping-button {
-            position: absolute;
-            bottom: 20px; /* Adjust as needed */
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .ping-button img {
-            width: 40px; /* Adjust size as needed */
-            height: auto;
+            display: block;
+            width: 40px; /* Adjust the width and height as needed */
+            height: 40px;
+            background-image: url('bitcoin-btc-logo.png'); /* Replace 'bitcoin-btc-logo.png' with the actual path to your PNG file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999; /* Ensure the button stays above other content */
         }
     </style>
 </head>
@@ -97,11 +97,9 @@
         <a href="https://www.linkedin.com/in/d4tis" class="cta-button">In</a>
         <a href="lightning:zap@d4tis.me" class="cta-button">⚡</a>
     </div>
-    <a href="https://learnmeabitcoin.com" class="ping-button">
-        <img src="bitcoin-btc-logo.png" alt="Bitcoin Logo">
-    </a>
     <div class="footer">
         <p>Inflation=Theft</p>
     </div>
+    <a href="https://learnmeabitcoin.com" class="ping-button"></a>
 </body>
 </html>
