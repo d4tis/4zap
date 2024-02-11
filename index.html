@@ -45,6 +45,10 @@
         h1, h2, p, a {
             color: #fff; /* White text */
             font-weight: bold; /* Set font weight to bold */
+            text-decoration: none; /* Remove underline from all links */
+        }
+        a:hover {
+            text-decoration: none; /* Remove underline on hover */
         }
         .cta-button {
             display: inline-block;
@@ -90,12 +94,12 @@
         <img src="profile.jpg" alt="Profile Picture">
     </div>
     <div class="container">
-        <h2><a href="lightning:zap@d4tis.me">⚡zap@d4tis.me⚡</a></h2>
+        <h2><a href="lightning:zap@d4tis.me" style="text-decoration: none; color: inherit;">⚡zap@d4tis.me⚡</a></h2>
         <br>
         <a href="https://x.com/d4tis_" class="cta-button">X</a>
         <a href="https://primal.net/p/npub1cx2wtu40pu4xzu0qmcz0mkfup3uk86pztnkyjkq3nfr9ghvxe9xsafsp6k" class="cta-button">nostr</a>
         <a href="https://www.linkedin.com/in/d4tis" class="cta-button">in</a>
-        <a href="lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0" class="cta-button">⚡lnurl</a>
+        <a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0" class="cta-button">⚡lnurl</a>
     </div>
     <div class="footer">
         <p>Inflation=Theft</p>
