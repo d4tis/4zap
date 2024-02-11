@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>d4tis.me</title>
-    <!-- Font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
-        /* Internal CSS styles */
         body {
-            font-family: 'Ubuntu', Arial, sans-serif; /* Applying Ubuntu font */
+            font-family: 'Ubuntu', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Black background */
+            background-color: #000;
             text-align: center;
-            color: #fff; /* White text */
+            color: #fff;
         }
         .header {
-            background-color: #cc5500; /* Darker orange header */
-            color: #fff; /* White text */
+            background-color: #cc5500;
+            color: #fff;
             padding: 20px;
             font-weight: bold;
         }
@@ -28,9 +26,9 @@
             border-radius: 50%;
             width: 130px;
             height: 130px;
-            margin: 20px auto 1px auto; /* Reduced bottom margin */
-            background-color: #fff; /* White background for image box */
-            border: 6px solid #cc5500; /* Orange border */
+            margin: 20px auto 1px auto;
+            background-color: #fff;
+            border: 6px solid #cc5500;
             overflow: hidden;
         }
         .profile-picture img {
@@ -40,73 +38,65 @@
         }
         .container {
             padding: 20px;
-            margin-bottom: 20px; /* Ensure space for the footer */
+            margin-bottom: 20px;
         }
         h1, h2, p, a {
-            color: #fff; /* White text */
-            font-weight: bold; /* Set font weight to bold */
-            text-decoration: none; /* Remove underline from all links */
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: none; /* Remove underline on hover */
+            text-decoration: none;
         }
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #cc5500; /* Darker orange button */
-            color: #000; /* Black text */
+            background-color: #cc5500;
+            color: #000;
             text-decoration: none;
-            border-radius: 20px; /* Increased border radius for more curve */
+            border-radius: 20px;
             transition: background-color 0.3s ease, color 0.3s ease;
             margin: 10px;
-            font-size: 16px; /* Increase font size */
+            font-size: 16px;
         }
         .cta-button:hover {
-            background-color: #ff9933; /* Lighter orange button on hover */
+            background-color: #ff9933;
         }
         .footer {
-            background-color: #000; /* Black footer background */
+            background-color: #000;
             padding: 10px;
-            font-size: 13px; /* Small font size */
+            font-size: 13px;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
         .footer a {
-            color: #fff; /* White link text */
-            text-decoration: none; /* Remove underline */
+            color: #fff;
+            text-decoration: none;
         }
         .footer a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline;
         }
         .ping-button {
             display: block;
-            width: 40px; /* Adjust the width and height as needed */
+            width: 40px;
             height: 40px;
-            background-image: url('bitcoin-btc-logo.png'); /* Replace 'bitcoin-btc-logo.png' with the actual path to your PNG file */
+            background-image: url('bitcoin-btc-logo.png');
             background-size: cover;
             background-repeat: no-repeat;
             position: fixed;
             bottom: 20px;
             right: 20px;
-            z-index: 999; /* Ensure the button stays above other content */
+            z-index: 999;
             animation: flash 4s infinite;
         }
-        
         @keyframes flash {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        
         .small-text {
-            font-size: 18px; /* Smaller font size for the lightning address */
+            font-size: 18px;
         }
     </style>
 </head>
