@@ -38,6 +38,7 @@
             font-size: 16px;
             transition: background-color 0.3s ease, color 0.3s ease;
             margin: 5px; /* Added margin for spacing */
+            text-decoration: none; /* Remove underline for link */
         }
         .lnurl-link:hover, .copy-button:hover {
             background-color: #666;
@@ -51,9 +52,9 @@
         <br>
         <!-- Replace 'qr_code.png' with the actual path to your QR code image -->
         <img src="qr_code.png" alt="QR Code">
-        <!-- Buttons for "Open in Wallet" and "Copy lnurl" -->
+        <!-- Links for "Open in Wallet" and "Copy lnurl" -->
         <div>
-            <button class="lnurl-link">Open in Wallet</button>
+            <a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0" class="lnurl-link">Open in Wallet</a>
             <button class="copy-button" onclick="copyLightningAddress()">Copy LNURL</button>
         </div>
     </div>
