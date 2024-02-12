@@ -97,15 +97,16 @@
     <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
 
     <script>
-        // JavaScript to handle LNURL button click
-        document.getElementById('lnurl-button').addEventListener('click', function() {
-            document.getElementById('qr-popup').style.display = 'flex';
-        });
+    // JavaScript to handle LNURL button click
+    document.getElementById('lnurl-button').addEventListener('click', function() {
+        document.getElementById('qr-popup').style.display = 'flex';
+    });
 
-        // Close popup when close button is clicked
-        document.getElementById('popup-close').addEventListener('click', function() {
-            document.getElementById('qr-popup').style.display = 'none';
-        });
-    </script>
+    // Close popup when close button is clicked
+    document.getElementById('popup-close').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor tag
+        document.getElementById('qr-popup').style.display = 'none';
+    });
+</script>
 </body>
 </html>
