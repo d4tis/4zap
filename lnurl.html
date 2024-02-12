@@ -33,7 +33,7 @@
             border: 6px solid #444; /* Dark gray border */
             border-radius: 20px; /* Slightly curved edges */
         }
-        .lnurl-link, .copy-button {
+        .lnurl-link {
             padding: 10px 20px;
             background-color: #333;
             color: #fff;
@@ -45,8 +45,19 @@
             margin: 5px; /* Added margin for spacing */
             text-decoration: none; /* Remove underline for link */
             font-weight: bold; /* Ensure Ubuntu bold font */
-            height: 40px; /* Fixed height for buttons */
-            line-height: 40px; /* Center align text vertically */
+        }
+        .copy-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 5px; /* Added margin for spacing */
+            font-family: 'Ubuntu', Arial, sans-serif; /* Specify Ubuntu font for the button */
+            font-weight: bold; /* Ensure Ubuntu bold font */
         }
         .lnurl-link:hover, .copy-button:hover {
             background-color: #666;
