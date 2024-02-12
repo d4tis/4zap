@@ -85,21 +85,6 @@
         <p><a href="https://m.youtube.com/shorts/WnjLUG1bgH4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflation=Theft</a></p>
     </div>
 
-    <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
-
-    <script>
-        // JavaScript to handle LNURL button click
-        document.getElementById('lnurl-button').addEventListener('click', function() {
-            document.getElementById('qr-popup').style.display = 'flex';
-        });
-
-        // Close popup when close button is clicked
-        document.getElementById('popup-close').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default behavior of the anchor tag
-            document.getElementById('qr-popup').style.display = 'none';
-        });
-    </script>
-
     <!-- QR code popup -->
     <div class="popup" id="qr-popup">
         <div class="popup-content">
@@ -108,5 +93,21 @@
             <p><a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0">Scan or Click</a></p>
         </div>
     </div>
+
+    <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JavaScript to handle LNURL button click
+            document.getElementById('lnurl-button').addEventListener('click', function() {
+                document.getElementById('qr-popup').style.display = 'flex';
+            });
+
+            // Close popup when close button is clicked
+            document.getElementById('popup-close').addEventListener('click', function() {
+                document.getElementById('qr-popup').style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
