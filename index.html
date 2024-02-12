@@ -28,8 +28,8 @@
         .popup {
             display: none;
             position: fixed;
-            left: 50%;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             background-color: #fff;
             border: 2px solid #333;
@@ -38,6 +38,11 @@
             max-width: 50%;
             max-height: 50%;
             overflow: auto;
+        }
+
+        .popup img {
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .popup-close {
@@ -68,14 +73,15 @@
     <div class="footer" style="bottom: 15px;">
         <p><a href="https://m.youtube.com/shorts/WnjLUG1bgH4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflation=Theft</a></p>
     </div>
-    <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
 
     <!-- QR code popup -->
     <div class="popup" id="qr-popup">
         <span class="popup-close" id="popup-close">&times;</span>
         <img src="qr_code_image.png" alt="QR Code">
-        <p>Scan QR code or click <a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0">here</a> to open LNURL</p>
+        <p><a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0">Scan or Click</a></p>
     </div>
+
+    <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
 
     <script>
         // JavaScript to handle LNURL button click
@@ -88,5 +94,4 @@
             document.getElementById('qr-popup').style.display = 'none';
         });
     </script>
-</body>
-</html>
+    
