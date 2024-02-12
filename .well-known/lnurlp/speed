@@ -1,0 +1,1 @@
+{"minSendable":1000,"maxSendable":500000000000,"metadata":"[[\"text/plain\",\"speed-payment-address\"],[\"text/identifier\",\"d4tis@speed.app\"]]","commentAllowed":255,"callback":"https://appapi.tryspeed.com/lnurl/d0f48f3d6d9b00fe7489698fc3fa8e6cccdb98937e52c6a28a4dc4479e2bcf80","tag":"payRequest"}
