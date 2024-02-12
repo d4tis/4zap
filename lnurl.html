@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNURL Popup</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .popup-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .popup-content img {
+            max-width: 80%;
+            max-height: 80%;
+            margin-bottom: 20px;
+        }
+        .lnurl-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .copy-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .copy-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-content">
+        <!-- Replace 'qr_code_image.png' with the actual path to your QR code image -->
+        <img src="qr_code.png" alt="QR Code">
+        <!-- Replace 'lightning_address_link' with the actual LNURL link -->
+        <a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0" class="lnurl-link">Scan or Click for Lightning Address</a>
+        <!-- Button to copy the lightning address -->
+        <button class="copy-button" onclick="copyLightningAddress()">Copy</button>
+    </div>
+
+    <script>
+        function copyLightningAddress() {
+            var lnurlLink = document.createElement('textarea');
+            lnurlLink.value = 'lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0';
+            document.body.appendChild(lnurlLink);
+            lnurlLink.select();
+            document.execCommand('copy');
+            document.body.removeChild(lnurlLink);
+            alert('Lightning Address copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
