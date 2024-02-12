@@ -26,13 +26,7 @@
             max-height: 80%;
             margin-bottom: 20px;
         }
-        .lnurl-link {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .copy-button {
+        .lnurl-link, .copy-button {
             padding: 10px 20px;
             background-color: #333;
             color: #fff;
@@ -41,8 +35,9 @@
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 5px; /* Added margin for spacing */
         }
-        .copy-button:hover {
+        .lnurl-link:hover, .copy-button:hover {
             background-color: #666;
         }
     </style>
@@ -50,15 +45,16 @@
 <body>
     <div class="popup-content">
         <!-- Add your custom text here -->
-        <h2>Scan, Click or Copy</h2>
+        <h2>Scan, Click, or Copy</h2>
         <!-- Replace 'qr_code.png' with the actual path to your QR code image -->
         <img src="qr_code.png" alt="QR Code">
-        <!-- Replace 'lightning_address_link' with the actual LNURL link -->
-        <a href="lightning:lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhkgdr5d9eszvfds0" class="lnurl-link">Open in Wallet</a>
-        <!-- Button to copy the lightning address -->
-        <button class="copy-button" onclick="copyLightningAddress()">Copy lnurl</button>
+        <!-- Buttons for "Open in Wallet" and "Copy lnurl" -->
+        <div>
+            <button class="lnurl-link">Open in Wallet</button>
+            <button class="copy-button" onclick="copyLightningAddress()">Copy lnurl</button>
+        </div>
     </div>
- <br/>
+
     <script>
         function copyLightningAddress() {
             var lnurlLink = document.createElement('textarea');
