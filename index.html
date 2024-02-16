@@ -108,6 +108,18 @@
         .small-text {
             font-size: 19px;
         }
+        /* Styles for Moscow Time Widget */
+        #blockclock-container {
+            font-family: 'Ubuntu', Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 200px;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -126,10 +138,23 @@
         <br/>
         <a href="https://revolut.me/d4tis" class="cta-button">£££</a>
         <a href="popup.html" class="cta-button" target="_blank">lnurl</a>
+
+        <!-- Moscow Time Widget -->
+        <div id="blockclock-container" class="moscowtime"></div>
     </div>
     <div class="footer">
         <p><a href="https://m.youtube.com/shorts/WnjLUG1bgH4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inflation=Theft</a></p>
     </div>
     <a href="https://bitcoin.rocks" class="ping-button" target="_blank"></a>
+
+    <!-- Import the required widget code and styles -->
+    <script src="https://moscowtime.xyz/widget.js"></script>
+    <!-- When the window has finished loading, mount the widget in its appropriate place -->
+    <script>
+        let blockClock;
+        window.onload = function () {
+            blockClock = mountBlockClock();
+        };
+    </script>
 </body>
 </html>
